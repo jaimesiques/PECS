@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <HorizontalScrollView
+        android:id="@+id/seccionCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/round_button_categorias"
+        android:scrollbars="none"
+        >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/cat1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Animales"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/cat2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Alimentacion" />
+
+            <Button
+                android:id="@+id/cat3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Acciones" />
+
+
+            <Button
+                android:id="@+id/cat4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Colores" />
+
+            <Button
+                android:id="@+id/cat5"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Cuerpo" />
+
+            <Button
+                android:id="@+id/cat6"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Formas" />
+
+            <Button
+                android:id="@+id/cat7"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Lugares" />
+
+            <Button
+                android:id="@+id/cat8"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Números" />
+
+            <Button
+                android:id="@+id/cat9"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Objetos" />
+
+            <Button
+                android:id="@+id/cat10"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/round_categoria"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Sentimientos" />
+
+        </GridLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/seccionPictogramasCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/round_button_pictogramas"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/gridPictogramasCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:columnCount="7"
+            android:layout_gravity="center_horizontal"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            >
+
+            <ImageView
+                android:id="@+id/myimage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:tint="@color/colorAccent"/>
+            <ImageView
+                android:id="@+id/myimage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:tint="@color/colorAccent"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/seccionRespuestaPictogramas"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_button_respuesta_pictos"
+        >
+
+        <LinearLayout
+            android:id="@+id/gridRespuestasPicrogramas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:columnCount="7"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            >
+
+            <ImageView
+                android:id="@+id/myimage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:tint="@color/colorNaranjo"/>
+            <ImageView
+                android:id="@+id/myimage4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:tint="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_button_respuesta_textos">
+
+        <GridLayout
+                android:id="@+id/seccionRespuestaTextos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/texto_respuesta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre 1 -"
+                android:textColor="@color/border_color"
+                android:textSize="11dp"
+                />
+
+            <TextView
+                android:id="@+id/texto_respuesta2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Nombre 2 -"
+                android:textColor="@color/border_color"
+                android:textSize="11dp"
+                />
+
+            <TextView
+                android:id="@+id/texto_respuesta3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Nombre 3 -"
+                android:textColor="@color/border_color"
+                android:textSize="11dp"
+                />
+
+            <TextView
+                android:id="@+id/texto_respuesta4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Nombre 4 -"
+                android:textColor="@color/border_color"
+                android:textSize="11dp"
+                />
+
+            <TextView
+                android:id="@+id/texto_respuesta5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Nombre 5 -"
+                android:textColor="@color/border_color"
+                android:textSize="11dp"
+                />
+
+            <TextView
+                android:id="@+id/texto_respuesta6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Nombre 6 -"
+                android:textColor="@color/border_color"
+                android:textSize="11dp"
+                />
+
+            <TextView
+                android:id="@+id/texto_respuesta7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Nombre 7"
+                android:textColor="@color/border_color"
+                android:textSize="11dp"
+                />
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

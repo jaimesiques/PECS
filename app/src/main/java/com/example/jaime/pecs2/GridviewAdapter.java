@@ -37,6 +37,7 @@ public class GridviewAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView img;
+
         if (convertView == null) {
             img = new ImageView(context);
             convertView = img;

@@ -3,7 +3,9 @@ package com.example.jaime.pecs2;
 import android.support.v7.app.AppCompatActivity;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.GridView;
+import android.widget.ImageView;
 
 public class PlayActivity extends AppCompatActivity {
 
@@ -166,6 +168,45 @@ public class PlayActivity extends AppCompatActivity {
             R.drawable.cat1_volar,
     };
 
+    Integer[] cat2 = {
+            R.drawable.cat1_rallar_queso,
+            R.drawable.cat1_rascar,
+            R.drawable.cat1_recolectar,
+            R.drawable.cat1_regalar,
+            R.drawable.cat1_regalar1,
+            R.drawable.cat1_regalar2,
+            R.drawable.cat1_remangarse,
+            R.drawable.cat1_remar,
+            R.drawable.cat1_remar1,
+            R.drawable.cat1_restar,
+            R.drawable.cat1_robar,
+            R.drawable.cat1_sacarse_la_chaqueta,
+            R.drawable.cat1_salpicar,
+            R.drawable.cat1_saltar,
+            R.drawable.cat1_saltar1,
+            R.drawable.cat1_saltar_la_cuerda,
+            R.drawable.cat1_saludar,
+            R.drawable.cat1_saludar1,
+            R.drawable.cat1_saludar2,
+            R.drawable.cat1_saludar3,
+            R.drawable.cat1_secar_el_pelo,
+            R.drawable.cat1_secar_el_pelo2,
+            R.drawable.cat1_secar_el_pelo3,
+            R.drawable.cat1_secar_los_platos,
+            R.drawable.cat1_servir,
+            R.drawable.cat1_sonarse,
+            R.drawable.cat1_sonarse1,
+            R.drawable.cat1_sonarse2,
+            R.drawable.cat1_subirse_el_pantalon,
+            R.drawable.cat1_tachar,
+            R.drawable.cat1_taladrar,
+            R.drawable.cat1_talar,
+            R.drawable.cat1_tocar_el_piano,
+            R.drawable.cat1_tocar_la_guitarra,
+            R.drawable.cat1_tomar_la_toalla,
+            R.drawable.cat1_vivir,
+            R.drawable.cat1_volar,
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,5 +219,88 @@ public class PlayActivity extends AppCompatActivity {
         gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat1);
 
         gridView.setAdapter(gridViewAdapter);
+
+        ImageView image1 = (ImageView) findViewById(R.id.categoria_1);
+        image1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat1);
+                gridView.setAdapter(gridViewAdapter);
+            }
+
+        });
+
+        ImageView image2 = (ImageView) findViewById(R.id.categoria_2);
+        image2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat2);
+                gridView.setAdapter(gridViewAdapter);
+            }
+
+        });
+
+        ImageView image3 = (ImageView) findViewById(R.id.categoria_3);
+        image3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat2);
+                gridView.setAdapter(gridViewAdapter);
+            }
+
+        });
+
+        ImageView image4 = (ImageView) findViewById(R.id.categoria_4);
+        image4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat2);
+                gridView.setAdapter(gridViewAdapter);
+            }
+
+        });
+
+        ImageView image5 = (ImageView) findViewById(R.id.categoria_5);
+        image5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat2);
+                gridView.setAdapter(gridViewAdapter);
+            }
+
+        });
+
+        ImageView image6 = (ImageView) findViewById(R.id.categoria_6);
+        image6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat2);
+                gridView.setAdapter(gridViewAdapter);
+            }
+
+        });
+
+
+        ImageView image7 = (ImageView) findViewById(R.id.categoria_7);
+        image7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat2);
+                gridView.setAdapter(gridViewAdapter);
+            }
+
+        });
+
+
+        ImageView image8 = (ImageView) findViewById(R.id.categoria_8);
+        image8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat2);
+                gridView.setAdapter(gridViewAdapter);
+            }
+
+        });
+
     }
 }

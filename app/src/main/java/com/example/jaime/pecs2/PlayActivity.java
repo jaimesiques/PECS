@@ -458,28 +458,10 @@ public class PlayActivity extends AppCompatActivity {
         // FIN CATEGORIAS
         // --------------------------------------
 
-        final GridView gv = (GridView) findViewById(R.id.grid_respuestas);
-
-        Integer[] resp = {
-        };
-
-        // Populate a List from Array elements
-        final List<Integer> plantsList = new ArrayList<Integer>(Arrays.asList(resp));
-
-        // Create a new ArrayAdapter
-        final ArrayAdapter<Integer> gridViewArrayAdapter = new ArrayAdapter<Integer>
-                (this,android.R.layout.simple_list_item_1, plantsList);
-
-        // Data bind GridView with ArrayAdapter (String Array elements)
-        gv.setAdapter(gridViewArrayAdapter);
-
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Toast.makeText(PlayActivity.this, "" + id, Toast.LENGTH_SHORT).show();
-                plantsList.add(R.drawable.cat2_abotonar);
-                gridView.setAdapter(gridViewAdapter);
-                gv.setAdapter(gridViewAdapter);
             }
         });
     }

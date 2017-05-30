@@ -50,7 +50,7 @@ public class GridviewAdapter extends BaseAdapter{
 
         Picasso.with(context)
                 .load(items[position])
-                .placeholder(R.drawable.cat1_abecedario)
+                .placeholder(R.drawable.categoria1_abecedario)
                 .resize(200, 200)
                 .into(img);
 

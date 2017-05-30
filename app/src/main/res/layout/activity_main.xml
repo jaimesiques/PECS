@@ -9,7 +9,7 @@
 
     <ScrollView
         android:id="@+id/scroll_categorias"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="match_parent"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="3dp"
@@ -32,7 +32,7 @@
                 android:id="@+id/categoria_1"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat1_abecedario"
+                android:src="@drawable/categoria1_abecedario"
                 android:layout_gravity="center_horizontal"
                 />
 
@@ -40,7 +40,7 @@
                 android:id="@+id/categoria_2"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat2_acciones"
+                android:src="@drawable/categoria2_acciones"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -49,7 +49,7 @@
                 android:id="@+id/categoria_3"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat3_alimento"
+                android:src="@drawable/categoria3_alimentos"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -58,7 +58,7 @@
                 android:id="@+id/categoria_4"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat4_animales"
+                android:src="@drawable/categoria4_animales"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -67,7 +67,7 @@
                 android:id="@+id/categoria_5"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat5_casa"
+                android:src="@drawable/categoria5_hogar"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -76,7 +76,7 @@
                 android:id="@+id/categoria_6"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat6_colores"
+                android:src="@drawable/categoria6_colores"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -85,7 +85,7 @@
                 android:id="@+id/categoria_7"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat7_formas"
+                android:src="@drawable/categoria7_cuerpo"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -94,7 +94,7 @@
                 android:id="@+id/categoria_8"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat8_instrumentos"
+                android:src="@drawable/categoria8_deportes"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -103,7 +103,7 @@
                 android:id="@+id/categoria_9"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat9_lugares"
+                android:src="@drawable/categoria9_formas"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -112,7 +112,7 @@
                 android:id="@+id/categoria_10"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat10_naturaleza"
+                android:src="@drawable/categoria10_instrumentos"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -121,7 +121,7 @@
                 android:id="@+id/categoria_11"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat11_numeros"
+                android:src="@drawable/categoria11_juguetes"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -130,7 +130,7 @@
                 android:id="@+id/categoria_12"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat12_objetos"
+                android:src="@drawable/categoria12_lugares"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -139,7 +139,7 @@
                 android:id="@+id/categoria_13"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat13_paises"
+                android:src="@drawable/categoria13_naturaleza"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -148,7 +148,7 @@
                 android:id="@+id/categoria_14"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat14_personas"
+                android:src="@drawable/categoria14_numeros"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -157,7 +157,7 @@
                 android:id="@+id/categoria_15"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat15_vestimenta"
+                android:src="@drawable/categoria15_objetos"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -166,7 +166,7 @@
                 android:id="@+id/categoria_16"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat16_sentimientos"
+                android:src="@drawable/categoria16_paises"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -175,7 +175,7 @@
                 android:id="@+id/categoria_17"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat17_senaletica"
+                android:src="@drawable/categoria17_personas"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -184,7 +184,34 @@
                 android:id="@+id/categoria_18"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/cat18_transporte"
+                android:src="@drawable/categoria18_ropa"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_19"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria19_sentimientos"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_20"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria20_senales"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_21"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria21_transportes"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 />
@@ -199,7 +226,6 @@
         android:layout_height="220dp"
         android:layout_alignTop="@+id/scroll_categorias"
         android:layout_toRightOf="@+id/scroll_categorias"
-        android:layout_marginTop="3dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:paddingTop="5dp"
@@ -243,10 +269,51 @@
         android:overScrollMode="never"
         >
 
-        <LinearLayout
+        <GridLayout
+            android:id="@+id/grid_respuestas"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical" />
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit"
+            android:layout_gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/resp_1"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/categoria1_abecedario"
+                />
+
+            <ImageView
+                android:id="@+id/resp_2"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/categoria1_abecedario"
+                />
+
+            <ImageView
+                android:id="@+id/resp_3"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/categoria1_abecedario"
+                />
+
+            <ImageView
+                android:id="@+id/resp_4"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/categoria1_abecedario"
+                />
+
+            <ImageView
+                android:id="@+id/resp_5"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/categoria1_abecedario"
+                />
+
+
+         </GridLayout>
 
     </HorizontalScrollView>
 

@@ -1,5 +1,7 @@
 package com.example.jaime.pecs2;
 
+import android.media.Image;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -8,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,6 +22,7 @@ public class PlayActivity extends AppCompatActivity {
     private GridView gridView;
     private GridviewAdapter gridViewAdapter;
 
+    //Array con todas las imagenes de la categoria 1 (Lo mismo para las demas categorias)
     Integer[] cat1 = {
             R.drawable.cat1_1alfabeto,
             R.drawable.cat1_a,
@@ -353,8 +357,6 @@ public class PlayActivity extends AppCompatActivity {
 
     Integer[] cat4 = {
 
-
-
     };
 
 
@@ -364,17 +366,17 @@ public class PlayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // --------------------------------------
-        //INICIO CATEGORIAS
+        //          INICIO CATEGORIAS
         // --------------------------------------
 
-        gridView = (GridView) findViewById(R.id.grid_pictogramas);
-        gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat1);
+        gridView = (GridView) findViewById(R.id.grid_pictogramas);      // Inicializo un gridview y le asigno el grid de pictogramas
+        gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat1); // Asigno el array (cat1) de categoria 1 al gridViewAdapter
 
-        gridView.setAdapter(gridViewAdapter);
+        gridView.setAdapter(gridViewAdapter);                           // Actualizo el gridView de pictogramas (el de la derecha)  con los pictogramas de la categoria 1
 
-        ImageView image1 = (ImageView) findViewById(R.id.categoria_1);
-        image1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
+        ImageView image1 = (ImageView) findViewById(R.id.categoria_1);  // Inicializo un ImageView con la categoria 1 (Lo mismo para todas las categorias)
+        image1.setOnClickListener(new View.OnClickListener() {          // Le asigno un ClickListener a la imagen para cambiar los pictogramas del grid de pictogramas
+            public void onClick(View v)                                 // cuando se haga click en las distintas categorias (Lo mismo para todas las categorias)
             {
                 gridViewAdapter = new GridviewAdapter(PlayActivity.this, cat1);
                 gridView.setAdapter(gridViewAdapter);
@@ -458,10 +460,12 @@ public class PlayActivity extends AppCompatActivity {
         // FIN CATEGORIAS
         // --------------------------------------
 
+        // Accion de los pictogramas del grid derecho (donde aparecen todos los pictogramas de las categorias)
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Toast.makeText(PlayActivity.this, "" + id, Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlayActivity.this, "" + id, Toast.LENGTH_SHORT).show();
+
             }
         });
     }

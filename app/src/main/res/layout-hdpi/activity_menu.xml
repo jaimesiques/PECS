@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_menu">
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Móvil PECS"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blanco"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:text="Inicio"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/boton_menu"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="180dp"
+        android:text="INSTRUCCIONES"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/boton_menu"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="260dp"
+        android:text="ACERCA DE"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        android:background="@drawable/boton_menu"/>
+
+</LinearLayout>

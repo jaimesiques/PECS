@@ -203,13 +203,6 @@ public class LoadData {
         Integer contador = 0;
         boolean flag = false;
 
-//        for(int i=0; i < longitud_resultados; i ++){
-//            if(this.resultados.get(i).isActivado()){
-//                posicion = i;
-//                posicion ++;
-//            }
-//        }
-
         while(!flag && contador <5){
             if(contador == 0){
                 if(!LoadData.getInstance().resultados.get(contador).isActivado()){
@@ -225,7 +218,6 @@ public class LoadData {
                 }
             }
         }
-
         return contador;
     }
 

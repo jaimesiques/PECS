@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -26,6 +27,7 @@ public class PlayActivity extends AppCompatActivity {
     private GridView gridView;
     private GridviewAdapter gridViewAdapter;
     private ImageView resultado;
+    private Button btn_borrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,24 @@ public class PlayActivity extends AppCompatActivity {
             }
         });
 
+        btn_borrar = (Button) findViewById(R.id.button_borrar);
+        btn_borrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                borrarRespuestas();
+            }
+        });
+    }
+
+    private void borrarRespuestas() {
+        Integer longitud_respuestas = LoadData.getInstance().resultados.size();
+        ImageView image;
+
+        for(int i = 0; i < longitud_respuestas; i++){
+            LoadData.getInstance().resultados.get(i).setActivado(false);
+            image = (ImageView) findViewById(LoadData.getInstance().resultados.get(i).getUrl_resultado());
+            image.setImageResource(0);
+        }
     }
 
     private void cargar_categorias(final Integer num_categoria) {

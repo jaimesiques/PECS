@@ -41,95 +41,9 @@ public class PlayActivity extends AppCompatActivity {
 
         gridView.setAdapter(gridViewAdapter);
 
-        ImageView image1 = (ImageView) findViewById(R.id.categoria_1);
-        image1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                LoadData.getInstance().activateCategoria(0);
-                gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(0).getUrls());
-                gridView.setAdapter(gridViewAdapter);
-            }
-
-        });
-
-        ImageView image2 = (ImageView) findViewById(R.id.categoria_2);
-        image2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                LoadData.getInstance().activateCategoria(1);
-                gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(1).getUrls());
-                gridView.setAdapter(gridViewAdapter);
-            }
-
-        });
-
-        ImageView image3 = (ImageView) findViewById(R.id.categoria_3);
-        image3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                LoadData.getInstance().activateCategoria(2);
-                gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(0).getUrls());
-                gridView.setAdapter(gridViewAdapter);
-            }
-
-        });
-
-        ImageView image4 = (ImageView) findViewById(R.id.categoria_4);
-        image4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                LoadData.getInstance().activateCategoria(3);
-                gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(0).getUrls());
-                gridView.setAdapter(gridViewAdapter);
-            }
-
-        });
-
-        ImageView image5 = (ImageView) findViewById(R.id.categoria_5);
-        image5.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                LoadData.getInstance().activateCategoria(4);
-                gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(0).getUrls());
-                gridView.setAdapter(gridViewAdapter);
-            }
-
-        });
-
-        ImageView image6 = (ImageView) findViewById(R.id.categoria_6);
-        image6.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                LoadData.getInstance().activateCategoria(5);
-                gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(0).getUrls());
-                gridView.setAdapter(gridViewAdapter);
-            }
-
-        });
-
-
-        ImageView image7 = (ImageView) findViewById(R.id.categoria_7);
-        image7.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                LoadData.getInstance().activateCategoria(6);
-                gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(0).getUrls());
-                gridView.setAdapter(gridViewAdapter);
-            }
-
-        });
-
-
-        ImageView image8 = (ImageView) findViewById(R.id.categoria_8);
-        image8.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                LoadData.getInstance().activateCategoria(7);
-                gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(0).getUrls());
-                gridView.setAdapter(gridViewAdapter);
-            }
-
-        });
+        //Cargar categorias
+        for(int i=0; i<LoadData.getInstance().categorias.size(); i++)
+        cargar_categorias(i);
 
         // --------------------------------------
         // FIN CATEGORIAS
@@ -141,10 +55,26 @@ public class PlayActivity extends AppCompatActivity {
                 //Obtenemos la categoría activada
                 Integer categoria;
                 categoria = LoadData.getInstance().getCategoriaActivada();
-                Log.e("problema", String.valueOf(categoria));
                 agregarResultado(position,categoria);
             }
         });
+
+    }
+
+    private void cargar_categorias(final Integer num_categoria) {
+        Integer longitud_categorias = LoadData.getInstance().categorias.size();
+
+            ImageView image = (ImageView) findViewById(LoadData.getInstance().categorias.get(num_categoria).getUrl_categoria());
+            image.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v)
+                {
+                    LoadData.getInstance().activateCategoria(num_categoria);
+                    gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(num_categoria).getUrls());
+                    gridView.setAdapter(gridViewAdapter);
+                }
+
+            });
+
 
     }
 
@@ -168,8 +98,9 @@ public class PlayActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     //Eliminar foto y re-ordenar
                     Integer resultado_posicion = LoadData.getInstance().getResultadoById(v.getId()).getId();
+                    Toast.makeText(PlayActivity.this, String.valueOf(resultado_posicion), Toast.LENGTH_SHORT).show();
                     if (LoadData.getInstance().resultados.get(resultado_posicion).isActivado()) {
-                        reordenar(resultado_posicion, PlayActivity.this);
+                        borrarRespuesta(resultado_posicion);
                     }else{
                         Toast.makeText(PlayActivity.this, "No hay actividad para borrar", Toast.LENGTH_SHORT).show();
                     }
@@ -180,8 +111,12 @@ public class PlayActivity extends AppCompatActivity {
         }
     }
 
-    private void reordenar(Integer resultado_posicion, PlayActivity playActivity) {
-        //Falta esta wea
+    private void borrarRespuesta(Integer resultado_posicion) {
+        //Desactivamos el objeto seleccionado
+        LoadData.getInstance().resultados.get(resultado_posicion).setActivado(false);
+        //Borramos el drawable
+        resultado = (ImageView) findViewById(LoadData.getInstance().resultados.get(resultado_posicion).getUrl_resultado());
+        resultado.setImageResource(0);
     }
 
 }

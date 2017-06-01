@@ -1,6 +1,7 @@
 package com.example.jaime.pecs2.Load;
 
 import android.content.Context;
+import android.util.Log;
 import android.widget.GridView;
 
 import com.example.jaime.pecs2.PlayActivity;
@@ -46,11 +47,11 @@ public class LoadData {
 
     private void load_resultados() {
         resultados = new ArrayList<Resultado>();
-        Resultado resultado1 = new Resultado(1,R.id.respuesta1);
-        Resultado resultado2 = new Resultado(2,R.id.respuesta2);
-        Resultado resultado3 = new Resultado(3,R.id.respuesta3);
-        Resultado resultado4 = new Resultado(4,R.id.respuesta4);
-        Resultado resultado5 = new Resultado(5,R.id.respuesta5);
+        Resultado resultado1 = new Resultado(0,R.id.respuesta1);
+        Resultado resultado2 = new Resultado(1,R.id.respuesta2);
+        Resultado resultado3 = new Resultado(2,R.id.respuesta3);
+        Resultado resultado4 = new Resultado(3,R.id.respuesta4);
+        Resultado resultado5 = new Resultado(4,R.id.respuesta5);
 
         resultados.add(resultado1);
         resultados.add(resultado2);
@@ -62,41 +63,41 @@ public class LoadData {
     private void load_categories() {
 
         longitud_categorias = categorias.size();
-        Categoria categoria1 = new Categoria(longitud_categorias, "categoria1 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria1 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_1, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria2 = new Categoria(longitud_categorias, "categoria2 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria2 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_2, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria3 = new Categoria(longitud_categorias, "categoria3 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria3 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_3, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria4 = new Categoria(longitud_categorias, "categoria4 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria4 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_4, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria5 = new Categoria(longitud_categorias, "categoria5 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria5 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_5, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria6 = new Categoria(longitud_categorias, "categoria6 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria6 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_6, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria7 = new Categoria(longitud_categorias, "categoria7 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria7 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_7, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria8 = new Categoria(longitud_categorias, "categoria8 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria8 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_8, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria9 = new Categoria(longitud_categorias, "categoria9 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria9 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_9, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria10 = new Categoria(longitud_categorias, "categoria10 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria10 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_10, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria11 = new Categoria(longitud_categorias, "categoria11 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria11 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_11, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria12 = new Categoria(longitud_categorias, "categoria12 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria12 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_12, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria13 = new Categoria(longitud_categorias, "categoria13 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria13 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_13, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria14 = new Categoria(longitud_categorias, "categoria14 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria14 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_14, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria15 = new Categoria(longitud_categorias, "categoria15 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria15 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_15, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria16 = new Categoria(longitud_categorias, "categoria16 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria16 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_16, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria17 = new Categoria(longitud_categorias, "categoria17 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria17 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_17, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria18 = new Categoria(longitud_categorias, "categoria18 " + String.valueOf(longitud_categorias), 1);
+        Categoria categoria18 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_18, 1);
 
         categorias.add(categoria1);
         categorias.add(categoria2);
@@ -199,16 +200,33 @@ public class LoadData {
 
     public Integer getSiguienteEspacio(){
         Integer longitud_resultados = this.resultados.size();
-        Integer posicion = 0;
+        Integer contador = 0;
+        boolean flag = false;
 
-        for(int i=0; i < longitud_resultados; i ++){
-            if(this.resultados.get(i).isActivado()){
-                posicion = i;
-                posicion ++;
+//        for(int i=0; i < longitud_resultados; i ++){
+//            if(this.resultados.get(i).isActivado()){
+//                posicion = i;
+//                posicion ++;
+//            }
+//        }
+
+        while(!flag && contador <5){
+            if(contador == 0){
+                if(!LoadData.getInstance().resultados.get(contador).isActivado()){
+                    flag = true;
+                }else{
+                    contador++;
+                }
+            }else{
+                if(!LoadData.getInstance().resultados.get(contador).isActivado()){
+                    flag = true;
+                }else{
+                    contador++;
+                }
             }
         }
 
-        return posicion;
+        return contador;
     }
 
     public Resultado getResultadoById(Integer id){
@@ -216,7 +234,9 @@ public class LoadData {
         Resultado resultado = this.resultados.get(0);
 
         for(int i=0; i < longitud_resultados; i ++){
-            if(this.resultados.get(i).getId() == id){
+//            Log.v("id_resultados_array", String.valueOf(this.resultados.get(i).getUrl_resultado()));
+//            Log.v("id_resultados_id", String.valueOf(id));
+            if(this.resultados.get(i).getUrl_resultado().equals(id) ){
                 resultado = this.resultados.get(i);
             }
         }

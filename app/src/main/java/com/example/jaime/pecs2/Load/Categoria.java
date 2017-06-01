@@ -11,13 +11,15 @@ public class Categoria {
 
     private Integer id; //Id categoría
     private String nombre_categoria; //Nombre de la categoría
+    private Integer url_categoria;
     private Integer estado; // Estado Categoría
     private ArrayList<Pictograma> pictogramas;
     private boolean activo;
 
-    public Categoria(Integer id, String nombre_categoria, Integer estado) {
+    public Categoria(Integer id, String nombre_categoria, Integer url_categoria, Integer estado) {
         this.id = id;
         this.nombre_categoria = nombre_categoria;
+        this.url_categoria = url_categoria;
         this.estado = estado;
         this.pictogramas = new ArrayList<Pictograma>();
         this.activo = false;
@@ -87,6 +89,14 @@ public class Categoria {
 
     public void desactivar(){
         this.activo = false;
+    }
+
+    public Integer getUrl_categoria() {
+        return url_categoria;
+    }
+
+    public void setUrl_categoria(Integer url_categoria) {
+        this.url_categoria = url_categoria;
     }
 
 }

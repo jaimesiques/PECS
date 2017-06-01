@@ -224,7 +224,7 @@
     <RelativeLayout
         android:id="@+id/scroll_pictogramas"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="360dp"
         android:layout_alignTop="@+id/scroll_categorias"
         android:layout_toRightOf="@+id/scroll_categorias"
         android:layout_marginLeft="5dp"
@@ -241,7 +241,7 @@
         <GridView
             android:id="@+id/grid_pictogramas"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:numColumns="4"
             android:verticalSpacing="10dp"
             android:horizontalSpacing="10dp"
@@ -258,7 +258,7 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="140dp"
         android:background="@drawable/round_button_respuesta_pictos"
         android:layout_below="@+id/scroll_pictogramas"
         android:layout_alignLeft="@+id/scroll_pictogramas"

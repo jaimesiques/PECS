@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <ScrollView
+        android:id="@+id/scroll_categorias"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/round_button_categorias"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <GridLayout
+            android:id="@+id/grid_categorias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/categoria_1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria1_abecedario"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria2_acciones"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria3_alimentos"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria4_animales"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria5_hogar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria6_colores"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria7_cuerpo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria8_deportes"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria9_formas"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_10"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria10_instrumentos"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_11"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria11_juguetes"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_12"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria12_lugares"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_13"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria13_naturaleza"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_14"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria14_numeros"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_15"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria15_objetos"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_16"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria16_paises"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_17"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria17_personas"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_18"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria18_ropa"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_19"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria19_sentimientos"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_20"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria20_senales"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/categoria_21"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/categoria21_transportes"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/scroll_pictogramas"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignTop="@+id/scroll_categorias"
+        android:layout_toRightOf="@+id/scroll_categorias"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/round_button_pictogramas"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <GridView
+            android:id="@+id/grid_pictogramas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            >
+
+         </GridView>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_button_respuesta_pictos"
+        android:layout_below="@+id/scroll_pictogramas"
+        android:layout_alignLeft="@+id/scroll_pictogramas"
+        android:layout_toRightOf="@+id/scroll_categorias"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/respuesta1"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cuadrito"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/respuesta2"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cuadrito"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/respuesta3"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cuadrito"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/respuesta4"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cuadrito"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/respuesta5"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cuadrito"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

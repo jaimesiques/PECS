@@ -74,6 +74,7 @@ public class PlayActivity extends AppCompatActivity {
         Integer longitud_respuestas = LoadData.getInstance().resultados.size();
         ImageView image;
 
+        //Borrar
         for(int i = 0; i < longitud_respuestas; i++){
             LoadData.getInstance().resultados.get(i).setActivado(false);
             image = (ImageView) findViewById(LoadData.getInstance().resultados.get(i).getUrl_resultado());

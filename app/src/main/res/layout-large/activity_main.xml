@@ -9,39 +9,45 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="30dp"
         app:srcCompat="@color/colorAccent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/scroll_pictogramas"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.517" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="20dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@color/colorAccent"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/scroll_pictogramas"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.517" />
 
     <ScrollView
         android:id="@+id/scroll_categorias"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
         android:background="@color/blanco"
         android:overScrollMode="never"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
         android:scrollbars="none"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:layout_marginLeft="6dp"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.0">
 
         <GridLayout
@@ -52,71 +58,71 @@
 
             <ImageView
                 android:id="@+id/categoria_1"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/categoria1_abecedario" />
 
             <ImageView
                 android:id="@+id/categoria_2"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria2_acciones" />
 
             <ImageView
                 android:id="@+id/categoria_3"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria3_alimentos" />
 
             <ImageView
                 android:id="@+id/categoria_4"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria4_animales" />
 
             <ImageView
                 android:id="@+id/categoria_5"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria5_hogar" />
 
             <ImageView
                 android:id="@+id/categoria_6"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria6_colores" />
 
             <ImageView
                 android:id="@+id/categoria_7"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria7_cuerpo" />
 
             <ImageView
                 android:id="@+id/categoria_8"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria8_deportes" />
 
             <ImageView
                 android:id="@+id/categoria_9"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria9_formas" />
@@ -131,88 +137,88 @@
 
             <ImageView
                 android:id="@+id/categoria_11"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria11_juguetes" />
 
             <ImageView
                 android:id="@+id/categoria_12"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria12_lugares" />
 
             <ImageView
                 android:id="@+id/categoria_13"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria13_naturaleza" />
 
             <ImageView
                 android:id="@+id/categoria_14"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria14_numeros" />
 
             <ImageView
                 android:id="@+id/categoria_15"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria15_objetos" />
 
             <ImageView
                 android:id="@+id/categoria_16"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria16_paises" />
 
             <ImageView
                 android:id="@+id/categoria_17"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria17_personas" />
 
             <ImageView
                 android:id="@+id/categoria_18"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria18_ropa" />
 
             <ImageView
                 android:id="@+id/categoria_19"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria19_sentimientos" />
 
             <ImageView
                 android:id="@+id/categoria_20"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria20_senales" />
 
             <ImageView
                 android:id="@+id/categoria_21"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/categoria21_transportes" />
@@ -266,7 +272,7 @@
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="180dp"
         android:layout_alignLeft="@+id/scroll_pictogramas"
         android:layout_below="@+id/scroll_pictogramas"
         android:layout_marginBottom="8dp"
@@ -293,38 +299,43 @@
 
             <ImageView
                 android:id="@+id/respuesta1"
-                android:layout_width="75dp"
-                android:layout_height="110dp"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop" />
 
             <ImageView
                 android:id="@+id/respuesta2"
-                android:layout_width="75dp"
-                android:layout_height="110dp"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop" />
 
             <ImageView
                 android:id="@+id/respuesta3"
-                android:layout_width="75dp"
-                android:layout_height="110dp"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop" />
 
             <ImageView
                 android:id="@+id/respuesta4"
-                android:layout_width="75dp"
-                android:layout_height="110dp"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop" />
 
             <ImageView
                 android:id="@+id/respuesta5"
-                android:layout_width="75dp"
-                android:layout_height="110dp"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop" />
 
             <Button
                 android:id="@+id/button_borrar"

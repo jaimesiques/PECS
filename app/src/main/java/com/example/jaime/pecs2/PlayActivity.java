@@ -1,6 +1,7 @@
 package com.example.jaime.pecs2;
 
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -28,11 +29,16 @@ public class PlayActivity extends AppCompatActivity {
     private GridviewAdapter gridViewAdapter;
     private ImageView resultado;
     private Button btn_borrar;
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Sonido
+        mp = MediaPlayer.create(getApplicationContext(), R.raw.click_boton);
+
 
         // --------------------------------------
         //INICIO CATEGORIAS
@@ -54,6 +60,7 @@ public class PlayActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                mp.start();
                 //Obtenemos la categoría activada
                 Integer categoria;
                 categoria = LoadData.getInstance().getCategoriaActivada();
@@ -65,6 +72,7 @@ public class PlayActivity extends AppCompatActivity {
         btn_borrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mp.start();
                 borrarRespuestas();
             }
         });
@@ -90,6 +98,7 @@ public class PlayActivity extends AppCompatActivity {
         image.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v)
                 {
+                    mp.start();
                     LoadData.getInstance().activateCategoria(num_categoria);
                     gridViewAdapter = new GridviewAdapter(PlayActivity.this, LoadData.getInstance().categorias.get(num_categoria).getUrls());
                     gridView.setAdapter(gridViewAdapter);
@@ -120,6 +129,7 @@ public class PlayActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     //Eliminar foto y re-ordenar
+                    mp.start();
                     Integer resultado_posicion = LoadData.getInstance().getResultadoById(v.getId()).getId();
                     //Toast.makeText(PlayActivity.this, String.valueOf(resultado_posicion), Toast.LENGTH_SHORT).show();
                     if (LoadData.getInstance().resultados.get(resultado_posicion).isActivado()) {

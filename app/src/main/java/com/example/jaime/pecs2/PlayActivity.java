@@ -86,7 +86,8 @@ public class PlayActivity extends AppCompatActivity {
         Integer longitud_categorias = LoadData.getInstance().categorias.size();
 
             ImageView image = (ImageView) findViewById(LoadData.getInstance().categorias.get(num_categoria).getUrl_categoria());
-            image.setOnClickListener(new View.OnClickListener() {
+
+        image.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v)
                 {
                     LoadData.getInstance().activateCategoria(num_categoria);
@@ -112,6 +113,7 @@ public class PlayActivity extends AppCompatActivity {
         if(posicion_resultado < 5) {
             resultado = (ImageView) findViewById(LoadData.getInstance().resultados.get(posicion_resultado).getUrl_resultado());
             resultado.setImageResource(LoadData.getInstance().categorias.get(categoria).getPictogramas().get(position_pictograma).getUrl_pictograma());
+
             LoadData.getInstance().resultados.get(posicion_resultado).setActivado(true);
 
             resultado.setOnClickListener(new View.OnClickListener() {
@@ -119,16 +121,16 @@ public class PlayActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     //Eliminar foto y re-ordenar
                     Integer resultado_posicion = LoadData.getInstance().getResultadoById(v.getId()).getId();
-                    Toast.makeText(PlayActivity.this, String.valueOf(resultado_posicion), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(PlayActivity.this, String.valueOf(resultado_posicion), Toast.LENGTH_SHORT).show();
                     if (LoadData.getInstance().resultados.get(resultado_posicion).isActivado()) {
                         borrarRespuesta(resultado_posicion);
                     }else{
-                        Toast.makeText(PlayActivity.this, "No hay actividad para borrar", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(PlayActivity.this, "No hay actividad para borrar", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
         }else{
-            Toast.makeText(PlayActivity.this, "Haz alcanzado el número máximo de actividades", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(PlayActivity.this, "Haz alcanzado el número máximo de actividades", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -3,12 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#F56C57</color>
-    <color name="colorAmarillo">#F5BE41</color>
-    <color name="colorVerde">#258039</color>
-    <color name="colorRojo">#CF3721</color>
+    <color name="colorAmarillo">#80F5BE41</color>
+    <color name="colorVerde">#80258039</color>
+    <color name="colorRojo">#80CF3721</color>
     <color name="colorNaranjo">#FA812F</color>
     <color name="border_color">#111</color>
-    <color name="blanco">#ffffff</color>
+    <color name="blanco">#66ffffff</color>
 
 
 </resources>

@@ -1,9 +1,5 @@
 package com.example.jaime.pecs2.Load;
 
-/**
- * Created by anibal on 31-05-17.
- */
-
 public class Pictograma {
 
     private Integer id; // ID pictograma

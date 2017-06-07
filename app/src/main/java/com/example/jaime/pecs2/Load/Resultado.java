@@ -2,10 +2,6 @@ package com.example.jaime.pecs2.Load;
 
 import com.example.jaime.pecs2.R;
 
-/**
- * Created by anibal on 01-06-17.
- */
-
 public class Resultado {
 
     private Integer id;

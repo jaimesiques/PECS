@@ -3,10 +3,6 @@ package com.example.jaime.pecs2.Load;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * Created by anibal on 31-05-17.
- */
-
 public class Categoria {
 
     private Integer id; //Id categoría

@@ -1,7 +1,7 @@
 package com.example.jaime.pecs2.Load;
 
-
 import com.example.jaime.pecs2.R;
+
 import java.util.ArrayList;
 
 
@@ -54,49 +54,47 @@ public class LoadData {
     private void load_categories() {
 
         longitud_categorias = categorias.size();
-        Categoria categoria1 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_1, 1);
+        Categoria categoria1 = new Categoria(longitud_categorias, "categoria 1" + String.valueOf(longitud_categorias), R.id.categoria_1, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria2 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_2, 1);
+        Categoria categoria2 = new Categoria(longitud_categorias, "categoria 2" + String.valueOf(longitud_categorias), R.id.categoria_2, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria3 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_3, 1);
+        Categoria categoria3 = new Categoria(longitud_categorias, "categoria 3" + String.valueOf(longitud_categorias), R.id.categoria_3, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria4 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_4, 1);
+        Categoria categoria4 = new Categoria(longitud_categorias, "categoria 4" + String.valueOf(longitud_categorias), R.id.categoria_4, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria5 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_5, 1);
+        Categoria categoria5 = new Categoria(longitud_categorias, "categoria 5" + String.valueOf(longitud_categorias), R.id.categoria_5, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria6 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_6, 1);
+        Categoria categoria6 = new Categoria(longitud_categorias, "categoria 6" + String.valueOf(longitud_categorias), R.id.categoria_6, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria7 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_7, 1);
+        Categoria categoria7 = new Categoria(longitud_categorias, "categoria 7" + String.valueOf(longitud_categorias), R.id.categoria_7, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria8 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_8, 1);
+        Categoria categoria8 = new Categoria(longitud_categorias, "categoria 8" + String.valueOf(longitud_categorias), R.id.categoria_8, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria9 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_9, 1);
+        Categoria categoria9 = new Categoria(longitud_categorias, "categoria 9" + String.valueOf(longitud_categorias), R.id.categoria_9, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria10 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_10, 1);
+        Categoria categoria10 = new Categoria(longitud_categorias, "categoria 10" + String.valueOf(longitud_categorias), R.id.categoria_10, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria11 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_11, 1);
+        Categoria categoria11 = new Categoria(longitud_categorias, "categoria 11" + String.valueOf(longitud_categorias), R.id.categoria_11, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria12 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_12, 1);
+        Categoria categoria12 = new Categoria(longitud_categorias, "categoria 12" + String.valueOf(longitud_categorias), R.id.categoria_12, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria13 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_13, 1);
+        Categoria categoria13 = new Categoria(longitud_categorias, "categoria 13" + String.valueOf(longitud_categorias), R.id.categoria_13, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria14 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_14, 1);
+        Categoria categoria14 = new Categoria(longitud_categorias, "categoria 14" + String.valueOf(longitud_categorias), R.id.categoria_14, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria15 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_15, 1);
+        Categoria categoria15 = new Categoria(longitud_categorias, "categoria 15" + String.valueOf(longitud_categorias), R.id.categoria_15, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria16 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_16, 1);
+        Categoria categoria16 = new Categoria(longitud_categorias, "categoria 16" + String.valueOf(longitud_categorias), R.id.categoria_16, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria17 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_17, 1);
+        Categoria categoria17 = new Categoria(longitud_categorias, "categoria 17" + String.valueOf(longitud_categorias), R.id.categoria_17, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria18 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_18, 1);
+        Categoria categoria18 = new Categoria(longitud_categorias, "categoria 18" + String.valueOf(longitud_categorias), R.id.categoria_18, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria19 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_19, 1);
+        Categoria categoria19 = new Categoria(longitud_categorias, "categoria 19" + String.valueOf(longitud_categorias), R.id.categoria_19, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria20 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_20, 1);
+        Categoria categoria20 = new Categoria(longitud_categorias, "categoria 20" + String.valueOf(longitud_categorias), R.id.categoria_20, 1);
         longitud_categorias = longitud_categorias + 1;
-        Categoria categoria21 = new Categoria(longitud_categorias, "categoria " + String.valueOf(longitud_categorias), R.id.categoria_21, 1);
-
-
+        Categoria categoria21 = new Categoria(longitud_categorias, "categoria 21" + String.valueOf(longitud_categorias), R.id.categoria_21, 1);
 
         categorias.add(categoria1);
         categorias.add(categoria2);
@@ -119,12 +117,44 @@ public class LoadData {
         categorias.add(categoria19);
         categorias.add(categoria20);
         categorias.add(categoria21);
-
     }
 
     private void load_pictogramas(){
 
-        //Correspondiente a los pictogramas de la categoria 0
+        load_cat1();
+
+        //Activamos la categoría 0 solamente
+        categorias.get(0).activar();
+
+        load_cat2();
+        load_cat3();
+        load_cat4();
+        load_cat5();
+        load_cat6();
+        load_cat7();
+        load_cat8();
+        load_cat9();
+        load_cat10();
+        load_cat11();
+        load_cat12();
+        load_cat13();
+        load_cat14();
+        load_cat15();
+        load_cat16();
+        load_cat17();
+        load_cat18();
+        load_cat19();
+        load_cat20();
+        load_cat21();
+
+    }
+
+
+
+
+    private void load_cat1() {
+
+        //Correspondiente a los pictogramas de la categoria 1
         longitud_pictogramas = categorias.get(0).getPictogramas().size();
 
         //Categoría 1
@@ -342,14 +372,13 @@ public class LoadData {
         categorias.get(0).getPictogramas().add(pictograma73);
         categorias.get(0).getPictogramas().add(pictograma74);
 
+    }
 
-        //Activamos la categoría 0 solamente
-        categorias.get(0).activar();
-
-        //Correspondiente a los pictogramas de la categoria 1
+    private void load_cat2() {
+        //Correspondiente a los pictogramas de la categoria 2
         longitud_pictogramas = categorias.get(1).getPictogramas().size();
 
-        //Categoría 1
+        //Categoría 2
         Pictograma pictograma2_1 = new Pictograma(longitud_pictogramas, 2, "Abotonar", R.drawable.cat2_abotonar, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
         Pictograma pictograma2_2 = new Pictograma(longitud_pictogramas, 2, "Abrazar", R.drawable.cat2_abrazar, 1);
@@ -798,7 +827,10 @@ public class LoadData {
         categorias.get(1).getPictogramas().add(pictograma2_151);
         categorias.get(1).getPictogramas().add(pictograma2_152);
 
-        //Correspondiente a los pictogramas de la categoria 1
+    }
+
+    private void load_cat3() {
+        //Correspondiente a los pictogramas de la categoria 3
         longitud_pictogramas = categorias.get(2).getPictogramas().size();
 
         //Categoría 3
@@ -1075,6 +1107,10 @@ public class LoadData {
         categorias.get(2).getPictogramas().add(pictograma3_92);
         categorias.get(2).getPictogramas().add(pictograma3_93);
         categorias.get(2).getPictogramas().add(pictograma3_94);
+
+    }
+
+    private void load_cat4() {
 
         //Correspondiente a los pictogramas de la categoria 4
         longitud_pictogramas = categorias.get(3).getPictogramas().size();
@@ -1381,6 +1417,10 @@ public class LoadData {
         categorias.get(3).getPictogramas().add(pictograma4_102);
         categorias.get(3).getPictogramas().add(pictograma4_103);
 
+    }
+
+    private void load_cat5() {
+
         //Correspondiente a los pictogramas de la categoria 5
         longitud_pictogramas = categorias.get(4).getPictogramas().size();
 
@@ -1686,8 +1726,11 @@ public class LoadData {
         categorias.get(4).getPictogramas().add(pictograma5_102);
         categorias.get(4).getPictogramas().add(pictograma5_103);
 
+    }
 
-    //Correspondiente a los pictogramas de la categoria 6
+    private void load_cat6() {
+
+        //Correspondiente a los pictogramas de la categoria 6
         longitud_pictogramas = categorias.get(5).getPictogramas().size();
 
         //Categoría 6
@@ -1746,6 +1789,10 @@ public class LoadData {
         categorias.get(5).getPictogramas().add(pictograma6_16);
         categorias.get(5).getPictogramas().add(pictograma6_17);
         categorias.get(5).getPictogramas().add(pictograma6_18);
+
+    }
+
+    private void load_cat7() {
 
         //Correspondiente a los pictogramas de la categoria 7
         longitud_pictogramas = categorias.get(6).getPictogramas().size();
@@ -2037,8 +2084,9 @@ public class LoadData {
         categorias.get(6).getPictogramas().add(pictograma7_97);
         categorias.get(6).getPictogramas().add(pictograma7_98);
 
+    }
 
-
+    private void load_cat8() {
 
         //Correspondiente a los pictogramas de la categoria 8
         longitud_pictogramas = categorias.get(7).getPictogramas().size();
@@ -2084,7 +2132,7 @@ public class LoadData {
         longitud_pictogramas = longitud_pictogramas + 1;
         Pictograma pictograma8_20 = new Pictograma(longitud_pictogramas, 8, "Yoga", R.drawable.cat8_yoga, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
-        
+
         categorias.get(7).getPictogramas().add(pictograma8_1);
         categorias.get(7).getPictogramas().add(pictograma8_2);
         categorias.get(7).getPictogramas().add(pictograma8_3);
@@ -2106,11 +2154,14 @@ public class LoadData {
         categorias.get(7).getPictogramas().add(pictograma8_19);
         categorias.get(7).getPictogramas().add(pictograma8_20);
 
+    }
+
+    private void load_cat9() {
 
         //Correspondiente a los pictogramas de la categoria 9
         longitud_pictogramas = categorias.get(8).getPictogramas().size();
 
-        //Categoría 1
+        //Categoría 9
         Pictograma pictograma9_1 = new Pictograma(longitud_pictogramas, 1, "Cilíndro", R.drawable.cat9_cilindro, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
         Pictograma pictograma9_2 = new Pictograma(longitud_pictogramas, 1, "Círculo", R.drawable.cat9_circulo, 1);
@@ -2188,6 +2239,9 @@ public class LoadData {
         categorias.get(8).getPictogramas().add(pictograma9_24);
         categorias.get(8).getPictogramas().add(pictograma9_25);
 
+    }
+
+    private void load_cat10() {
 
         //Correspondiente a los pictogramas de la categoria 10
         longitud_pictogramas = categorias.get(9).getPictogramas().size();
@@ -2290,6 +2344,9 @@ public class LoadData {
         categorias.get(9).getPictogramas().add(pictograma10_31);
         categorias.get(9).getPictogramas().add(pictograma10_32);
 
+    }
+
+    private void load_cat11() {
 
         //Correspondiente a los pictogramas de la categoria 11
         longitud_pictogramas = categorias.get(10).getPictogramas().size();
@@ -2317,7 +2374,9 @@ public class LoadData {
         categorias.get(10).getPictogramas().add(pictograma11_6);
         categorias.get(10).getPictogramas().add(pictograma11_7);
 
+    }
 
+    private void load_cat12() {
 
         //Correspondiente a los pictogramas de la categoria 12
         longitud_pictogramas = categorias.get(11).getPictogramas().size();
@@ -2454,7 +2513,9 @@ public class LoadData {
         categorias.get(11).getPictogramas().add(pictograma12_42);
         categorias.get(11).getPictogramas().add(pictograma12_43);
 
+    }
 
+    private void load_cat13() {
 
         //Correspondiente a los pictogramas de la categoria 13
         longitud_pictogramas = categorias.get(12).getPictogramas().size();
@@ -2506,7 +2567,9 @@ public class LoadData {
         categorias.get(12).getPictogramas().add(pictograma13_14);
         categorias.get(12).getPictogramas().add(pictograma13_15);
 
+    }
 
+    private void load_cat14() {
 
         //Correspondiente a los pictogramas de la categoria 14
         longitud_pictogramas = categorias.get(13).getPictogramas().size();
@@ -2531,9 +2594,7 @@ public class LoadData {
         longitud_pictogramas = longitud_pictogramas + 1;
         Pictograma pictograma14_9 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat14_9, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
-
-
-       /* Pictograma pictograma14_10 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat14_10, 1);
+        Pictograma pictograma14_10 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat14_10, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
         Pictograma pictograma14_11 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat14_11, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
@@ -2733,13 +2794,11 @@ public class LoadData {
         longitud_pictogramas = longitud_pictogramas + 1;
         Pictograma pictograma14_109 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat14_1000, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
-
-
         Pictograma pictograma14_110 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat14_adicion, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
         Pictograma pictograma14_111 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat14_resta, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
-        */
+
 
         categorias.get(13).getPictogramas().add(pictograma14_0);
         categorias.get(13).getPictogramas().add(pictograma14_1);
@@ -2751,8 +2810,6 @@ public class LoadData {
         categorias.get(13).getPictogramas().add(pictograma14_7);
         categorias.get(13).getPictogramas().add(pictograma14_8);
         categorias.get(13).getPictogramas().add(pictograma14_9);
-
-        /*
         categorias.get(13).getPictogramas().add(pictograma14_10);
         categorias.get(13).getPictogramas().add(pictograma14_11);
         categorias.get(13).getPictogramas().add(pictograma14_12);
@@ -2855,8 +2912,10 @@ public class LoadData {
         categorias.get(13).getPictogramas().add(pictograma14_109);
         categorias.get(13).getPictogramas().add(pictograma14_110);
         categorias.get(13).getPictogramas().add(pictograma14_111);
-        */
 
+    }
+
+    private void load_cat15() {
 
         //Correspondiente a los pictogramas de la categoria 15
         longitud_pictogramas = categorias.get(14).getPictogramas().size();
@@ -2984,6 +3043,9 @@ public class LoadData {
         categorias.get(14).getPictogramas().add(pictograma15_39);
         categorias.get(14).getPictogramas().add(pictograma15_40);
 
+    }
+
+    private void load_cat16() {
 
         //Correspondiente a los pictogramas de la categoria 16
         longitud_pictogramas = categorias.get(15).getPictogramas().size();
@@ -3165,6 +3227,9 @@ public class LoadData {
         categorias.get(15).getPictogramas().add(pictograma16_58);
         categorias.get(15).getPictogramas().add(pictograma16_59);
 
+    }
+
+    private void load_cat17() {
 
         //Correspondiente a los pictogramas de la categoria 17
         longitud_pictogramas = categorias.get(16).getPictogramas().size();
@@ -3351,6 +3416,9 @@ public class LoadData {
         categorias.get(16).getPictogramas().add(pictograma17_59);
         categorias.get(16).getPictogramas().add(pictograma17_60);
 
+    }
+
+    private void load_cat18() {
 
         //Correspondiente a los pictogramas de la categoria 18
         longitud_pictogramas = categorias.get(17).getPictogramas().size();
@@ -3561,18 +3629,20 @@ public class LoadData {
         categorias.get(17).getPictogramas().add(pictograma18_67);
         categorias.get(17).getPictogramas().add(pictograma18_68);
 
-        /*
+    }
+
+    private void load_cat19() {
 
         //Correspondiente a los pictogramas de la categoria 19
         longitud_pictogramas = categorias.get(18).getPictogramas().size();
 
-        Pictograma pictograma19_1 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat19_aburrida, 1);
+        Pictograma pictograma19_1 = new Pictograma(longitud_pictogramas, 1, "aburrida", R.drawable.cat19_aburrida, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
-        Pictograma pictograma19_2 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat19_aburrido, 1);
+        Pictograma pictograma19_2 = new Pictograma(longitud_pictogramas, 1, "aburrido", R.drawable.cat19_aburrido, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
-        Pictograma pictograma19_3 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat19_agotada, 1);
+        Pictograma pictograma19_3 = new Pictograma(longitud_pictogramas, 1, "agotada", R.drawable.cat19_agotada, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
-        Pictograma pictograma19_4 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat19_agotado, 1);
+        Pictograma pictograma19_4 = new Pictograma(longitud_pictogramas, 1, "agotado", R.drawable.cat19_agotado, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
         Pictograma pictograma19_5 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat19_alegre, 1);
         longitud_pictogramas = longitud_pictogramas + 1;
@@ -3666,17 +3736,77 @@ public class LoadData {
         categorias.get(18).getPictogramas().add(pictograma19_30);
         categorias.get(18).getPictogramas().add(pictograma19_31);
 
-        */
+    }
 
+    private void load_cat20() {
 
+        //Correspondiente a los pictogramas de la categoria 20
+        longitud_pictogramas = categorias.get(19).getPictogramas().size();
 
+        Pictograma pictograma20_1 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_atencion, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_2 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_pare, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_3 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_4 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido1, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_5 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido2, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_6 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido3, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_7 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido4, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_8 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido5, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_9 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido_ascensor, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_10 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido_celulares, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_11 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido_fumar, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_12 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido_grabar, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_13 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido_molestar, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_14 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido_paso, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_15 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido_peatones, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_16 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_prohibido_sacar_fotos, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_17 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_salida_emergencia, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
+        Pictograma pictograma20_18 = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat20_usar_gorrobano, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
 
+        categorias.get(19).getPictogramas().add(pictograma20_1);
+        categorias.get(19).getPictogramas().add(pictograma20_2);
+        categorias.get(19).getPictogramas().add(pictograma20_3);
+        categorias.get(19).getPictogramas().add(pictograma20_4);
+        categorias.get(19).getPictogramas().add(pictograma20_5);
+        categorias.get(19).getPictogramas().add(pictograma20_6);
+        categorias.get(19).getPictogramas().add(pictograma20_7);
+        categorias.get(19).getPictogramas().add(pictograma20_8);
+        categorias.get(19).getPictogramas().add(pictograma20_9);
+        categorias.get(19).getPictogramas().add(pictograma20_10);
+        categorias.get(19).getPictogramas().add(pictograma20_11);
+        categorias.get(19).getPictogramas().add(pictograma20_12);
+        categorias.get(19).getPictogramas().add(pictograma20_13);
+        categorias.get(19).getPictogramas().add(pictograma20_14);
+        categorias.get(19).getPictogramas().add(pictograma20_15);
+        categorias.get(19).getPictogramas().add(pictograma20_16);
+        categorias.get(19).getPictogramas().add(pictograma20_17);
+        categorias.get(19).getPictogramas().add(pictograma20_18);
+    }
 
+    private void load_cat21() {
 
+        //Correspondiente a los pictogramas de la categoria 20
+        longitud_pictogramas = categorias.get(20).getPictogramas().size();
 
-
-
-
+        Pictograma pictograma21_ = new Pictograma(longitud_pictogramas, 1, "", R.drawable.cat21_, 1);
+        longitud_pictogramas = longitud_pictogramas + 1;
 
     }
 

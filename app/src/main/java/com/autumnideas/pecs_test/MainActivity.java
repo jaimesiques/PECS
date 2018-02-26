@@ -149,9 +149,9 @@ public class MainActivity extends AppCompatActivity {
         //region RecyclerView
 
         recyclerView = findViewById(R.id.recycler_pictogramas);
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getApplicationContext(), 5);
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getApplicationContext(), 4);
         recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(5, dpToPx(10), true));
+        recyclerView.addItemDecoration(new GridSpacingItemDecoration(4, dpToPx(10), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         adapter = new AdapterPictogramas(MainActivity.this,categoria2);
         recyclerView.setAdapter(adapter);
@@ -747,6 +747,8 @@ public class MainActivity extends AppCompatActivity {
         categoria.add(pictograma);
         pictograma = new Pictograma(1, "coliflor", R.drawable.cat03__coliflor);
         categoria.add(pictograma);
+        pictograma = new Pictograma(1, "cubo de hielo", R.drawable.cat03__hielo);
+        categoria.add(pictograma);
         pictograma = new Pictograma(1, "damasco", R.drawable.cat03__damasco);
         categoria.add(pictograma);
         pictograma = new Pictograma(1, "ensalada", R.drawable.cat03__ensalada);
@@ -756,8 +758,6 @@ public class MainActivity extends AppCompatActivity {
         pictograma = new Pictograma(1, "frutilla", R.drawable.cat03__frutilla);
         categoria.add(pictograma);
         pictograma = new Pictograma(1, "hamburguesa con papas fritas", R.drawable.cat03__hamburguesa_con_papas_fritas);
-        categoria.add(pictograma);
-        pictograma = new Pictograma(1, "hielo", R.drawable.cat03__hielo);
         categoria.add(pictograma);
         pictograma = new Pictograma(1, "higo", R.drawable.cat03__higo);
         categoria.add(pictograma);

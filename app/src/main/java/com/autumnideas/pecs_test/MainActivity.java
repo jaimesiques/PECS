@@ -513,10 +513,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        for (int i = 0; i<5; i++){
+        for (int i = 0; i<=5; i++){
 
             if(pictoRespuestas_layouts.get(i).getEstado()){
-                // SE AÑADEN 3 FOTOS (0,1,2) Y SE INTENTA AGREGAR LA FOTO NUMERO 5 (DE LA POSICION 5)
                 respuestaTirafrase.add(pictoRespuestas_layouts.get(i));
             }
         }

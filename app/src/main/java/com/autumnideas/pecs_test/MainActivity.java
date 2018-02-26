@@ -511,14 +511,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (this, TirafraseActivity.class);
         Bundle args = new Bundle();
 
-        for (int i = 0; i<=5; i++){
+
+
+        for (int i = 0; i<5; i++){
 
             if(pictoRespuestas_layouts.get(i).getEstado()){
+                // SE AÑADEN 3 FOTOS (0,1,2) Y SE INTENTA AGREGAR LA FOTO NUMERO 5 (DE LA POSICION 5)
                 respuestaTirafrase.add(pictoRespuestas_layouts.get(i));
-                args.putInt("image"+i , respuestaTirafrase.get(i).getImage());
-                args.putString("title"+i , respuestaTirafrase.get(i).getTexto_respuesta().getText().toString());
-
             }
+        }
+
+        for(int j = 0; j<respuestaTirafrase.size(); j++){
+            args.putInt("image"+j , respuestaTirafrase.get(j).getImage());
+            args.putString("title"+j , respuestaTirafrase.get(j).getTexto_respuesta().getText().toString());
         }
         intent.putExtra("BUNDLE",args);
         finish();

@@ -727,7 +727,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/layout_pictogramas"
         android:layout_width="0dp"
-        android:layout_height="350dp"
+        android:layout_height="320dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"

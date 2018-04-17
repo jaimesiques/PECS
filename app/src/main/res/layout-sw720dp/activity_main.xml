@@ -9,10 +9,10 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/layout_categorias"
-        android:layout_width="90dp"
+        android:layout_width="130dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/round_corners"
         android:scrollbars="none"
@@ -78,7 +78,7 @@
                 <ImageView
                     android:id="@+id/button_cat1"
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
+                    android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:background="@android:color/white"
                     android:visibility="gone"
@@ -110,7 +110,7 @@
                         <ImageView
                             android:id="@+id/button_cat2"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat02_acciones" />
 
@@ -122,7 +122,7 @@
                             android:text="Acciones"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -143,7 +143,7 @@
                         <ImageView
                             android:id="@+id/button_cat3"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat03_alimentos" />
 
@@ -155,7 +155,7 @@
                             android:text="Alimentos"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -176,7 +176,7 @@
                         <ImageView
                             android:id="@+id/button_cat4"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat04_animales" />
 
@@ -188,7 +188,7 @@
                             android:text="Animales"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -209,7 +209,7 @@
                         <ImageView
                             android:id="@+id/button_cat5"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat05_hogar" />
 
@@ -221,7 +221,7 @@
                             android:text="Hogar"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -242,7 +242,7 @@
                         <ImageView
                             android:id="@+id/button_cat6"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat06_colores" />
 
@@ -254,7 +254,7 @@
                             android:text="Colores"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -275,7 +275,7 @@
                         <ImageView
                             android:id="@+id/button_cat7"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat07_cuerpo" />
 
@@ -287,7 +287,7 @@
                             android:text="Cuerpo"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -308,7 +308,7 @@
                         <ImageView
                             android:id="@+id/button_cat8"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat08_deportes" />
 
@@ -320,7 +320,7 @@
                             android:text="Deportes"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -341,7 +341,7 @@
                         <ImageView
                             android:id="@+id/button_cat9"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat09_formas" />
 
@@ -353,7 +353,7 @@
                             android:text="Formas"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -374,7 +374,7 @@
                         <ImageView
                             android:id="@+id/button_cat10"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat10_instrumentos" />
 
@@ -386,7 +386,7 @@
                             android:text="Instrumentos"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -407,7 +407,7 @@
                         <ImageView
                             android:id="@+id/button_cat11"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat11_juguetes" />
 
@@ -419,7 +419,7 @@
                             android:text="Juguetes"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -440,7 +440,7 @@
                         <ImageView
                             android:id="@+id/button_cat12"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat12_lugares" />
 
@@ -452,7 +452,7 @@
                             android:text="Lugares"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -462,7 +462,7 @@
                 <ImageView
                     android:id="@+id/button_cat13"
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
+                    android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:background="@android:color/white"
                     android:visibility="gone"
@@ -476,14 +476,14 @@
                     android:text="Naturaleza"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="12sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/button_cat14"
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
+                    android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:background="@android:color/white"
                     android:visibility="gone"
@@ -497,7 +497,7 @@
                     android:text="Números"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="12sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="gone" />
 
@@ -515,7 +515,7 @@
                         <ImageView
                             android:id="@+id/button_cat15"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat15_objetos" />
 
@@ -527,7 +527,7 @@
                             android:text="Objetos"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -548,7 +548,7 @@
                         <ImageView
                             android:id="@+id/button_cat16"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat16_paises" />
 
@@ -560,7 +560,7 @@
                             android:text="Países"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -581,7 +581,7 @@
                         <ImageView
                             android:id="@+id/button_cat17"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat17_personas" />
 
@@ -593,7 +593,7 @@
                             android:text="Personas"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -614,7 +614,7 @@
                         <ImageView
                             android:id="@+id/button_cat18"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat18_ropa" />
 
@@ -626,7 +626,7 @@
                             android:text="Ropa"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -647,7 +647,7 @@
                         <ImageView
                             android:id="@+id/button_cat19"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat19_sentimientos" />
 
@@ -659,7 +659,7 @@
                             android:text="Sentimientos"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -669,7 +669,7 @@
                 <ImageView
                     android:id="@+id/button_cat20"
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
+                    android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:background="@android:color/white"
                     android:visibility="gone"
@@ -683,7 +683,7 @@
                     android:text="Señales"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="12sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="gone" />
 
@@ -701,7 +701,7 @@
                         <ImageView
                             android:id="@+id/button_cat21"
                             android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+                            android:layout_height="80dp"
                             android:background="@android:color/white"
                             app:srcCompat="@drawable/cat21_transportes" />
 
@@ -713,7 +713,7 @@
                             android:text="Transportes"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -730,9 +730,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/round_corners"
         android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@+id/layout_tirafrase"
@@ -744,8 +744,6 @@
             android:id="@+id/recycler_pictogramas"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
             android:columnWidth="80dp"
             android:gravity="center"
             android:horizontalSpacing="2dp"
@@ -768,8 +766,8 @@
         android:id="@+id/layout_tirafrase"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/round_corners"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -797,8 +795,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="4dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginStart="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:orientation="vertical">
 
@@ -825,7 +823,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="10sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -855,8 +853,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="4dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginStart="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:orientation="vertical">
 
@@ -883,7 +881,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="10sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -913,8 +911,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="4dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginStart="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:orientation="vertical">
 
@@ -941,7 +939,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="10sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -971,8 +969,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="4dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginStart="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:orientation="vertical">
 
@@ -999,7 +997,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="10sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -1029,8 +1027,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="4dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginStart="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:orientation="vertical">
 
@@ -1057,7 +1055,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="10sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -1114,7 +1112,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="10sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -1158,9 +1156,9 @@
 
     <android.support.v7.widget.CardView
         android:id="@+id/button_cat_fav"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
         android:onClick="shorcutsButton"
         app:cardCornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="@+id/layout_categorias"
@@ -1176,7 +1174,7 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 app:srcCompat="@drawable/cat00_favorite" />
 
             <TextView
@@ -1188,7 +1186,7 @@
                 android:text="Favoritos"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </android.support.v7.widget.CardView>

@@ -1,5 +1,6 @@
 package com.autumnideas.pecs_test;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
@@ -11,15 +12,25 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.InputType;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+import android.view.Window;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputConnection;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<PictoRespuesta> pictoRespuestas_layouts;
 
     private ArrayList<PictoRespuesta> respuestaTirafrase;
+
+    private Dialog dialog;
 
     private Pictograma pictograma;
     private Pictograma pictograma_resultados;
@@ -280,15 +293,14 @@ public class MainActivity extends AppCompatActivity {
         //endregion
 
         //region BOTONES CATEGORÍAS
+
         // Boton Categoría 0 - FAVORITOS
-        final ImageView button0 = findViewById(R.id.button_cat0);
-        button0.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                adapter = new AdapterPictogramas(MainActivity.this,categoria0);
-                recyclerView.setAdapter(adapter);
-                pictoList_pictos = categoria0;
-            }
-        });
+//        final CardView button0 = findViewById(R.id.button_cat_fav);
+//        button0.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                shorcutsButton();
+//            }
+//        });
 
         //Boton Categoría 1 - ABECEDARIO
         final ImageView button1 = findViewById(R.id.button_cat1);
@@ -1950,6 +1962,31 @@ public class MainActivity extends AppCompatActivity {
         picto_respuesta6.setImageResource(0);
         texto_respuesta6.setText("");
         pictoRespuestas_layouts.get(5).setEstado(false);
+    }
+
+    //endregion
+
+    //region Metodo Shorcuts
+
+    public void shorcutsButton(View view) {
+        dialog = new Dialog(this);
+        dialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog);
+
+        // custom dialog
+        dialog.setContentView(R.layout.shorcuts_button);
+
+        CardView fav_card1 = dialog.findViewById(R.id.fav_card1);
+        // if button is clicked, close the custom dialog
+        fav_card1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pictograma = new Pictograma(0, "quiero", R.drawable.cat19__quiero);
+                fillAnswers(pictoRespuestas_layouts, pictograma);
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
     }
 
     //endregion

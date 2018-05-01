@@ -20,7 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:clickable="true">
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true">
 
             <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/card_pictograma_imagen"

@@ -765,7 +765,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/layout_tirafrase"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"

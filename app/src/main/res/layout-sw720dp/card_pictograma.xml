@@ -13,7 +13,10 @@
         android:layout_gravity="center"
         android:layout_margin="3dp"
         android:elevation="3dp"
-        app:cardCornerRadius="10dp">
+        app:cardCornerRadius="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/card_pictograma_item_ly"

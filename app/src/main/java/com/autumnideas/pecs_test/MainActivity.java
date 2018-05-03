@@ -1813,7 +1813,7 @@ public class MainActivity extends AppCompatActivity {
         categoria.add(pictograma);
         pictograma = new Pictograma(1, "no comprendo lo que dices", R.drawable.cat19__no_comprendo_lo_que_dices);
         categoria.add(pictograma);
-        pictograma = new Pictograma(1, "¿que dices?", R.drawable.cat19__que_dices);
+        pictograma = new Pictograma(1, "¿qué dices?", R.drawable.cat19__que_dices);
         categoria.add(pictograma);
         pictograma = new Pictograma(1, "quiero", R.drawable.cat19__quiero);
         categoria.add(pictograma);
@@ -1977,8 +1977,33 @@ public class MainActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.shorcuts_button);
 
         CardView fav_card1 = dialog.findViewById(R.id.fav_card1);
+
         // if button is clicked, close the custom dialog
         fav_card1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pictograma = new Pictograma(0, "yo", R.drawable.cat19__yo);
+                fillAnswers(pictoRespuestas_layouts, pictograma);
+                dialog.dismiss();
+            }
+        });
+
+        CardView fav_card2 = dialog.findViewById(R.id.fav_card2);
+
+        // if button is clicked, close the custom dialog
+        fav_card2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pictograma = new Pictograma(0, "yo", R.drawable.cat19__yo_2);
+                fillAnswers(pictoRespuestas_layouts, pictograma);
+                dialog.dismiss();
+            }
+        });
+
+        CardView fav_card3 = dialog.findViewById(R.id.fav_card3);
+
+        // if button is clicked, close the custom dialog
+        fav_card3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "quiero", R.drawable.cat19__quiero);
@@ -1986,6 +2011,67 @@ public class MainActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
+
+        CardView fav_card4 = dialog.findViewById(R.id.fav_card4);
+
+        // if button is clicked, close the custom dialog
+        fav_card4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pictograma = new Pictograma(0, "almorzar", R.drawable.cat02__almorzar);
+                fillAnswers(pictoRespuestas_layouts, pictograma);
+                dialog.dismiss();
+            }
+        });
+
+        CardView fav_card5 = dialog.findViewById(R.id.fav_card5);
+
+        // if button is clicked, close the custom dialog
+        fav_card5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pictograma = new Pictograma(0, "alcanzar", R.drawable.cat02__alcanzar);
+                fillAnswers(pictoRespuestas_layouts, pictograma);
+                dialog.dismiss();
+            }
+        });
+
+        CardView fav_card6 = dialog.findViewById(R.id.fav_card6);
+
+        // if button is clicked, close the custom dialog
+        fav_card6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pictograma = new Pictograma(0, "contento", R.drawable.cat19__contento_2);
+                fillAnswers(pictoRespuestas_layouts, pictograma);
+                dialog.dismiss();
+            }
+        });
+
+        CardView fav_card7 = dialog.findViewById(R.id.fav_card7);
+
+        // if button is clicked, close the custom dialog
+        fav_card7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pictograma = new Pictograma(0, "¿qué dices?", R.drawable.cat19__que_dices);
+                fillAnswers(pictoRespuestas_layouts, pictograma);
+                dialog.dismiss();
+            }
+        });
+
+        CardView fav_card8 = dialog.findViewById(R.id.fav_card8);
+
+        // if button is clicked, close the custom dialog
+        fav_card8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pictograma = new Pictograma(0, "casa", R.drawable.cat12__casa);
+                fillAnswers(pictoRespuestas_layouts, pictograma);
+                dialog.dismiss();
+            }
+        });
+
         dialog.show();
     }
 

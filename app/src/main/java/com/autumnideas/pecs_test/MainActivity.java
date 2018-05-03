@@ -1,9 +1,12 @@
 package com.autumnideas.pecs_test;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Rect;
+import android.preference.PreferenceManager;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -25,12 +28,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+
 import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +45,9 @@ public class MainActivity extends AppCompatActivity {
     private AdapterPictogramas adapter;
 
     private ArrayList<Pictograma> pictoList_pictos;
+    private ArrayList<Pictograma> favList_pictos;
     private ArrayList<PictoRespuesta> pictoRespuestas_layouts;
+    private ArrayList<PictoRespuesta> fav_layouts;
 
     private ArrayList<PictoRespuesta> respuestaTirafrase;
 
@@ -114,9 +123,10 @@ public class MainActivity extends AppCompatActivity {
 
         //region Instancio ArrayLists de seleccion
         pictoList_pictos = new ArrayList<Pictograma>();
+        favList_pictos = new ArrayList<Pictograma>();
         pictoRespuestas_layouts = new ArrayList<PictoRespuesta>();
         respuestaTirafrase = new ArrayList<PictoRespuesta>();
-
+        fav_layouts = new ArrayList<PictoRespuesta>();
         //endregion
 
         //region Instancio categorías
@@ -183,6 +193,10 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override public void onLongItemClick(View view, int position) {
                         //Acción click largo
+                        pictograma = new Pictograma(pictoList_pictos.get(position).getId(), pictoList_pictos.get(position).getNombre(), pictoList_pictos.get(position).getImagen());
+                        addFavourite(favList_pictos, pictograma);
+                        Toast.makeText(getApplicationContext(), "Agregado a favoritos!", Toast.LENGTH_SHORT).show();
+                        Log.e("favList size", String.valueOf(favList_pictos.size()));
                     }
                 })
         );
@@ -1976,102 +1990,295 @@ public class MainActivity extends AppCompatActivity {
         // custom dialog
         dialog.setContentView(R.layout.shorcuts_button);
 
+        //region Instancio elementos y onclick cards
+
+        //region Card 1
+
         CardView fav_card1 = dialog.findViewById(R.id.fav_card1);
+        ImageView fav_image1 = dialog.findViewById(R.id.fav_image1);
+        TextView fav_text1 = dialog.findViewById(R.id.fav_text1);
 
         // if button is clicked, close the custom dialog
         fav_card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "yo", R.drawable.cat19__yo);
-                fillAnswers(pictoRespuestas_layouts, pictograma);
-                dialog.dismiss();
+                if(favList_pictos.size() >=1) {
+                    fillAnswers(pictoRespuestas_layouts, favList_pictos.get(0));
+                    dialog.dismiss();
+                }
             }
         });
 
+        fav_card1.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(favList_pictos.size()>=1) {
+                    favList_pictos.remove(0);
+                    Toast.makeText(getApplicationContext(), "Favorito eliminado!", Toast.LENGTH_SHORT).show();
+                    Log.e("favlistpictos size", String.valueOf(favList_pictos.size()));
+                    dialog.dismiss();
+                }
+                return false;
+            }
+        });
+
+        //endregion
+
+        //region Card 2
+
         CardView fav_card2 = dialog.findViewById(R.id.fav_card2);
+        ImageView fav_image2 = dialog.findViewById(R.id.fav_image2);
+        TextView fav_text2 = dialog.findViewById(R.id.fav_text2);
 
         // if button is clicked, close the custom dialog
         fav_card2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "yo", R.drawable.cat19__yo_2);
-                fillAnswers(pictoRespuestas_layouts, pictograma);
-                dialog.dismiss();
+                if(favList_pictos.size() >=2) {
+                    fillAnswers(pictoRespuestas_layouts, favList_pictos.get(1));
+                    dialog.dismiss();
+                }
             }
         });
 
+        fav_card2.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(favList_pictos.size()>=2) {
+                    favList_pictos.remove(1);
+                    Toast.makeText(getApplicationContext(), "Favorito eliminado!", Toast.LENGTH_SHORT).show();
+                    Log.e("favlistpictos size", String.valueOf(favList_pictos.size()));
+                    dialog.dismiss();
+                }                return false;
+            }
+        });
+
+        //endregion
+
+        //region Card 3
+
         CardView fav_card3 = dialog.findViewById(R.id.fav_card3);
+        ImageView fav_image3 = dialog.findViewById(R.id.fav_image3);
+        TextView fav_text3 = dialog.findViewById(R.id.fav_text3);
 
         // if button is clicked, close the custom dialog
         fav_card3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "quiero", R.drawable.cat19__quiero);
-                fillAnswers(pictoRespuestas_layouts, pictograma);
-                dialog.dismiss();
+                if(favList_pictos.size() >=3) {
+                    fillAnswers(pictoRespuestas_layouts, favList_pictos.get(2));
+                    dialog.dismiss();
+                }
             }
         });
 
+        fav_card3.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(favList_pictos.size()>=3) {
+                    favList_pictos.remove(2);
+                    Toast.makeText(getApplicationContext(), "Favorito eliminado!", Toast.LENGTH_SHORT).show();
+                    Log.e("favlistpictos size", String.valueOf(favList_pictos.size()));
+                    dialog.dismiss();
+                }
+                return false;
+            }
+        });
+
+        //endregion
+
+        //region Card 4
+
         CardView fav_card4 = dialog.findViewById(R.id.fav_card4);
+        ImageView fav_image4 = dialog.findViewById(R.id.fav_image4);
+        TextView fav_text4 = dialog.findViewById(R.id.fav_text4);
 
         // if button is clicked, close the custom dialog
         fav_card4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "almorzar", R.drawable.cat02__almorzar);
-                fillAnswers(pictoRespuestas_layouts, pictograma);
-                dialog.dismiss();
+                if(favList_pictos.size() >= 4) {
+                    fillAnswers(pictoRespuestas_layouts, favList_pictos.get(3));
+                    dialog.dismiss();
+                }
             }
         });
 
+        fav_card4.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(favList_pictos.size()>=4) {
+                    favList_pictos.remove(3);
+                    Toast.makeText(getApplicationContext(), "Favorito eliminado!", Toast.LENGTH_SHORT).show();
+                    Log.e("favlistpictos size", String.valueOf(favList_pictos.size()));
+                    dialog.dismiss();
+                }
+                return false;
+            }
+        });
+
+        //endregion
+
+        //region Card 5
+
         CardView fav_card5 = dialog.findViewById(R.id.fav_card5);
+        ImageView fav_image5 = dialog.findViewById(R.id.fav_image5);
+        TextView fav_text5 = dialog.findViewById(R.id.fav_text5);
 
         // if button is clicked, close the custom dialog
         fav_card5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "alcanzar", R.drawable.cat02__alcanzar);
-                fillAnswers(pictoRespuestas_layouts, pictograma);
-                dialog.dismiss();
+                if(favList_pictos.size() >=5) {
+                    fillAnswers(pictoRespuestas_layouts, favList_pictos.get(4));
+                    dialog.dismiss();
+                }
             }
         });
 
+        fav_card5.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(favList_pictos.size()>=5) {
+                    favList_pictos.remove(4);
+                    Toast.makeText(getApplicationContext(), "Favorito eliminado!", Toast.LENGTH_SHORT).show();
+                    Log.e("favlistpictos size", String.valueOf(favList_pictos.size()));
+                    dialog.dismiss();
+                }
+                return false;
+            }
+        });
+
+        //endregion
+
+        //region Card 6
+
         CardView fav_card6 = dialog.findViewById(R.id.fav_card6);
+        ImageView fav_image6 = dialog.findViewById(R.id.fav_image6);
+        TextView fav_text6 = dialog.findViewById(R.id.fav_text6);
 
         // if button is clicked, close the custom dialog
         fav_card6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "contento", R.drawable.cat19__contento_2);
-                fillAnswers(pictoRespuestas_layouts, pictograma);
-                dialog.dismiss();
+                if(favList_pictos.size() >= 6) {
+                    fillAnswers(pictoRespuestas_layouts, favList_pictos.get(5));
+                    dialog.dismiss();
+                }
             }
         });
 
+        fav_card6.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(favList_pictos.size()>=6) {
+                    favList_pictos.remove(5);
+                    Toast.makeText(getApplicationContext(), "Favorito eliminado!", Toast.LENGTH_SHORT).show();
+                    Log.e("favlistpictos size", String.valueOf(favList_pictos.size()));
+                    dialog.dismiss();
+                }                return false;
+            }
+        });
+
+        //endregion
+
+        //region Card 7
+
         CardView fav_card7 = dialog.findViewById(R.id.fav_card7);
+        ImageView fav_image7 = dialog.findViewById(R.id.fav_image7);
+        TextView fav_text7 = dialog.findViewById(R.id.fav_text7);
 
         // if button is clicked, close the custom dialog
         fav_card7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "¿qué dices?", R.drawable.cat19__que_dices);
-                fillAnswers(pictoRespuestas_layouts, pictograma);
-                dialog.dismiss();
+                if(favList_pictos.size() >=7) {
+                    fillAnswers(pictoRespuestas_layouts, favList_pictos.get(6));
+                    dialog.dismiss();
+                }
             }
         });
 
+        fav_card7.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(favList_pictos.size()>=7) {
+                    favList_pictos.remove(6);
+                    Toast.makeText(getApplicationContext(), "Favorito eliminado!", Toast.LENGTH_SHORT).show();
+                    Log.e("favlistpictos size", String.valueOf(favList_pictos.size()));
+                    dialog.dismiss();
+                }
+                return false;
+            }
+        });
+
+        //endregion
+
+        //region Card 8
+
         CardView fav_card8 = dialog.findViewById(R.id.fav_card8);
+        ImageView fav_image8 = dialog.findViewById(R.id.fav_image8);
+        TextView fav_text8 = dialog.findViewById(R.id.fav_text8);
 
         // if button is clicked, close the custom dialog
         fav_card8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pictograma = new Pictograma(0, "casa", R.drawable.cat12__casa);
-                fillAnswers(pictoRespuestas_layouts, pictograma);
-                dialog.dismiss();
+                if(favList_pictos.size() >=8) {
+                    fillAnswers(pictoRespuestas_layouts, favList_pictos.get(7));
+                    dialog.dismiss();
+                }
             }
         });
 
+        fav_card8.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(favList_pictos.size()>=8) {
+                    favList_pictos.remove(7);
+                    Toast.makeText(getApplicationContext(), "Favorito eliminado!", Toast.LENGTH_SHORT).show();
+                    Log.e("favlistpictos size", String.valueOf(favList_pictos.size()));
+                    dialog.dismiss();
+                }                return false;
+            }
+        });
+
+        //endregion
+
+        //endregion
+
+        fav_layouts.clear();
+
+        PictoRespuesta fav_item = new PictoRespuesta(fav_card1, fav_image1, fav_text1, false, 0);
+        fav_layouts.add(fav_item);
+        fav_item = new PictoRespuesta(fav_card2, fav_image2, fav_text2, false, 0);
+        fav_layouts.add(fav_item);
+        fav_item = new PictoRespuesta(fav_card3, fav_image3, fav_text3, false, 0);
+        fav_layouts.add(fav_item);
+        fav_item = new PictoRespuesta(fav_card4, fav_image4, fav_text4, false, 0);
+        fav_layouts.add(fav_item);
+        fav_item = new PictoRespuesta(fav_card5, fav_image5, fav_text5, false, 0);
+        fav_layouts.add(fav_item);
+        fav_item = new PictoRespuesta(fav_card6, fav_image6, fav_text6, false, 0);
+        fav_layouts.add(fav_item);
+        fav_item = new PictoRespuesta(fav_card7, fav_image7, fav_text7, false, 0);
+        fav_layouts.add(fav_item);
+        fav_item = new PictoRespuesta(fav_card8, fav_image8, fav_text8, false, 0);
+        fav_layouts.add(fav_item);
+
+        Log.e("favLayouts size", String.valueOf(fav_layouts.size()));
+        Log.e("favList size", String.valueOf(favList_pictos.size()));
+
+
+        fillFavs(fav_layouts, favList_pictos);
         dialog.show();
     }
 
@@ -2088,6 +2295,60 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
         }
+    }
+
+    private void addFavourite(ArrayList<Pictograma> favList, Pictograma pictoSeleccionado){
+        if(favList.size() < 8){
+            favList.add(pictoSeleccionado);
+            for(int i = 0; i<favList.size(); i++){
+                Log.e("favlist", "FavList posicion " + i + " : " + favList.get(i).getNombre());
+            }
+        }
+    }
+
+    private void fillFavs(ArrayList<PictoRespuesta> favLayouts, ArrayList<Pictograma> favListPictos){
+        for(int i = 0; i < favListPictos.size(); i++){
+            for (int j = 0; j < favLayouts.size(); j++) {
+                if(!favLayouts.get(j).getEstado()) {
+                    Log.e("segundo for", "entre al segundo for i = " + i + " j = " + j);
+                    favLayouts.get(j).getImagen_respuesta().setImageResource(favListPictos.get(i).getImagen());
+                    favLayouts.get(j).getTexto_respuesta().setText(favListPictos.get(i).getNombre());
+                    favLayouts.get(j).setEstado(true);
+                    favLayouts.get(j).setImage(favListPictos.get(i).getImagen());
+                    break;
+                }
+            }
+        }
+    }
+
+    public static void save_User_To_Shared_Prefs(Context context, ArrayList<Pictograma> _USER) {
+        SharedPreferences appSharedPrefs = PreferenceManager
+                .getDefaultSharedPreferences(context.getApplicationContext());
+        SharedPreferences.Editor prefsEditor = appSharedPrefs.edit();
+        Gson gson = new Gson();
+        String json = gson.toJson(_USER);
+        prefsEditor.putString("user", json);
+        prefsEditor.commit();
+
+    }
+
+
+    public static ArrayList<Pictograma> get_User_From_Shared_Prefs(Context context) {
+        List<Pictograma> favList;
+
+
+        SharedPreferences appSharedPrefs = PreferenceManager
+                .getDefaultSharedPreferences(context.getApplicationContext());
+        Gson gson = new Gson();
+        String json = appSharedPrefs.getString("user", "");
+
+
+        Pictograma[] userItems = gson.fromJson(json,
+                Pictograma[].class);
+
+        favList = Arrays.asList(userItems);
+        favList =  new ArrayList<Pictograma>(favList);
+        return user;
     }
 
 }
